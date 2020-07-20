@@ -165,14 +165,11 @@ export default class CreditCardInput extends Component {
             <CCInput {...this._inputProps("name")}
                 containerStyle={[verticalInput ? s.verticalInputContainer : s.inputContainer, { width: NAME_INPUT_WIDTH }]} />
             <CCInput {...this._inputProps("number")}
-                keyboardType="numeric"
                 containerStyle={[verticalInput ? s.verticalInputContainer : s.inputContainer, { width: CARD_NUMBER_INPUT_WIDTH }]} />
             <View style={{flexDirection: 'row'}}>
                 <CCInput {...this._inputProps("expiry")}
-                    keyboardType="numeric"
                     containerStyle={[verticalInput ? s.verticalInputContainer : s.inputContainer, { width: EXPIRY_INPUT_WIDTH }]} />
                 <CCInput {...this._inputProps("cvc")}
-                    keyboardType="numeric"
                     containerStyle={[verticalInput ? s.verticalInputContainer : s.inputContainer, { width: CVC_INPUT_WIDTH }]} />
             </View>
         </ScrollView>
